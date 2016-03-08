@@ -1,9 +1,9 @@
-package new_proj;
+package Arrays;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class new_class {
+public class Arrays {
 	int[] array;
 
 	public static void main(String[] args) {
@@ -40,11 +40,6 @@ public class new_class {
 		System.out.println("\n\nMax value in matrix\n" + Matrix(matrix).get(Matrix(matrix).size() - 2));
 		System.out.println("\n\nMin value in matrix\n" + Matrix(matrix).get(Matrix(matrix).size() - 1) + "\n");
 
-		/*
-		 * for (int i = 0; i < matrix.length; i++) { for(int j = 0; j <
-		 * matrix[i].length; j++) { System.out.print(Change(matrix)[i][j]
-		 * +"\t"); } System.out.println(); }
-		 */
 		int minij, maxij, c, i1 = 0, i2 = 0, j1 = 0, j2 = 0;
 		minij = matrix[0][0];
 		maxij = matrix[0][0];
@@ -125,13 +120,5 @@ public class new_class {
 		list.add(maxij);
 		return list;
 	}
-	/*
-	 * public static int[][] Change(int [][] matrix) { int
-	 * minij,maxij,c,i1=0,i2=0,j1=0,j2=0; minij = matrix[0][0]; maxij =
-	 * matrix[0][0]; for (int i = 0; i < matrix.length; i++) { for(int j = 0; j
-	 * < matrix[i].length; j++) { if(minij < matrix[i][j]) { minij =
-	 * matrix[i][j]; i1 = i; j1 = j; } if(maxij > matrix[i][j]) { maxij =
-	 * matrix[i][j]; i2 = i; j2 = j; } } } c = matrix[i1][j1]; matrix[i1][j1] =
-	 * matrix[i2][j2]; matrix[i2][j2] = c; return matrix; }
-	 */
+
 }
